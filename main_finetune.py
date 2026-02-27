@@ -37,7 +37,7 @@ warnings.filterwarnings('ignore')
 
 def get_args_parser():
     parser = argparse.ArgumentParser('Resnet fine-tuning', add_help=False)
-    parser.add_argument('--batch-size', default=64, type=int,
+    parser.add_argument('--batch-size', default=32, type=int,
                         help='Per GPU batch size')
     parser.add_argument('--epochs', default=100, type=int)
     parser.add_argument('--update-freq', default=1, type=int,
